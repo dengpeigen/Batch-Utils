@@ -132,7 +132,7 @@ public class BatchTaskTest
 
 ### 2.核心原理（三层队列+信号量）
 
-![image-20220608093720554](C:\Users\Admin\AppData\Roaming\Typora\typora-user-images\image-20220608093720554.png)
+![image-20220608093720554](https://janezt-agentoss.oss-cn-beijing.aliyuncs.com/batch-utils.png)
 
 ### 3.核心类
 
