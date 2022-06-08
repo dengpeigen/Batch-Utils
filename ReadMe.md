@@ -2,7 +2,17 @@
 
 ### 1.使用方法
 
-**1.1 定义一个任务数据对象，用来承载任务信息**
+**1.1 引入maven依赖**
+
+```
+<dependency>
+    <groupId>com.janezt.yugong</groupId>
+    <artifactId>Batch-Utils</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+
+**1.2 定义一个任务数据对象，用来承载任务信息**
 
 ```
 /**
@@ -31,7 +41,7 @@ public class TestTask
 }
 ```
 
-**1.2 定义一个任务处理器的实现，实现TaskProcessor<TestTask>**
+**1.3 定义一个任务处理器的实现，实现TaskProcessor<TestTask>**
 
 ```java
 import java.util.List;
@@ -59,9 +69,9 @@ public class TestTaskProcessor implements TaskProcessor<TestTask>
 }
 ```
 
-**1.3 初始化任务处理器**
+**1.4 初始化任务处理器**
 
-**1.4 初始化任务调度器**
+**1.5 初始化任务调度器**
 
 核心参数:
 
@@ -83,7 +93,7 @@ public class TestTaskProcessor implements TaskProcessor<TestTask>
  */
 ```
 
-**1.5 提交任务到任务调度器**
+**1.6 提交任务到任务调度器**
 
 ```java
 /**
